@@ -1,0 +1,8 @@
+<div>
+    <input type="file" (change)="onFileChange($event)" accept=".xlsx, .xls">
+</div>
+  
+<div *NgIf="excelData">
+<h3>Uploaded Data:</h3>
+<pre>{{ data }}</pre>
+</div>
